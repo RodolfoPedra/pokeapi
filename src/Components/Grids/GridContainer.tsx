@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { GridProps } from '@material-ui/core';
 
-export default function GridContainer(props) {
+export default function GridContainer(props: GridProps) {
   const { children, ...rest } = props;
   return (
     <Grid container {...rest}>

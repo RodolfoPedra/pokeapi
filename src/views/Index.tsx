@@ -1,9 +1,20 @@
 import React from 'react';
+import PokeMain from '../Components/PokeMain';
 
 const InitialPage = () => {
   return (
     <div>
-      <h1>Initial Page</h1>
+      <PokeMain>
+        <h1>Initial Page</h1>
+        <ul>
+          <li>fhsadfsdahfahsflhdsa</li>
+        </ul>
+        <section>
+          <ul>
+            <li>fsdfsfds</li>
+          </ul>
+        </section>
+      </PokeMain>
     </div>
   );
 };
