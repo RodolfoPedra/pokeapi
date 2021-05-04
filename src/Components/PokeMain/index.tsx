@@ -1,25 +1,25 @@
-import React, { ReactNode, Children } from 'react';
+import React, { Children } from 'react';
 import ContainerMaterial from '../Grids/Container';
-import { StyledContainer } from './styled';
+import { InfoUpLine, InfoDownLine, StyledContainer } from './styled';
+import { WithChildren } from '../helpers/WithChildren';
 
-interface Props {
-  children: ReactNode;
-}
+type Props = WithChildren<{}>;
 
-const PokeMain: React.FC<Props> = (props) => {
-  const { children } = props;
-
+const PokeMain = ({ children }: Props) => {
   return (
     <>
-      <StyledContainer>
-        <ContainerMaterial maxWidth="lg">
+      <ContainerMaterial maxWidth="lg">
+        <StyledContainer>
           <>
             {Children.map(children, (item: any, index: number) => (
-              <>{item}</>
+              <>
+                {index === 0 && <InfoUpLine>{item}</InfoUpLine>}
+                {index > 0 && <InfoDownLine>{item}</InfoDownLine>}
+              </>
             ))}
           </>
-        </ContainerMaterial>
-      </StyledContainer>
+        </StyledContainer>
+      </ContainerMaterial>
     </>
   );
 };

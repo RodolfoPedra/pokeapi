@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyles from './Assets/jss';
 import Copywriting from './Components/Copywriting/Index';
 import Header from './Components/Header';
-import InitialPage from './views/Index';
+import InitialPage from './views';
 
 const App = () => {
   return (

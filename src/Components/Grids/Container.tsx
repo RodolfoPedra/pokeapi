@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import { ContainerProps } from '@material-ui/core';
 
 export default function ContainerMaterial(props: ContainerProps) {
-  const { children, ...rest } = props;
+  const { children } = props;
   return <Container maxWidth="lg">{children}</Container>;
 }
 

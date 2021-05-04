@@ -4,6 +4,7 @@ const colors = {
   'purple-3': '#B4ADBE',
   'purple-4': '#E0D7EC',
   raw: '#D4C3A3',
+  'bg-info-level': '#535662',
 };
 
 export default colors;
