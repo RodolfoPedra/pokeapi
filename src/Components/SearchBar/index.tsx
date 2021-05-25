@@ -33,6 +33,10 @@ export default function SearchBar() {
     }
   }
 
+  function keypress(event: any) {
+    console.log(event);
+  }
+
   React.useEffect(() => {
     (async () => {
       const result = await namesPokes(
@@ -57,6 +61,7 @@ export default function SearchBar() {
             margin="normal"
             variant="outlined"
             InputProps={{ ...params.InputProps, type: 'search' }}
+            onKeyPress={keypress}
           />
         )}
       />

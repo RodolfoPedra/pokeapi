@@ -14,7 +14,6 @@ const Header: React.FC = () => {
           <StyledHeader>
             <Logo src={pokemon} />
             <SearchBar />
-            <Logo src={competi} />
           </StyledHeader>
         </GridItem>
       </GridContainer>
